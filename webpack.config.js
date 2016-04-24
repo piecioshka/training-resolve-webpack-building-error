@@ -22,12 +22,12 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.json/,
+                test: /\.json$/,
                 exclude: /executor\/node_modules/,
                 loader: 'json-loader'
             },
             {
-                test: /\.js/,
+                test: /\.js$/,
                 exclude: /executor\/node_modules/,
                 loader: 'babel-loader',
                 query: {
